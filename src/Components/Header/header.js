@@ -7,7 +7,7 @@ export default function Header(props) {
 
     return (
         <nav id='nav-bar'>
-            <ul className='d-flex'>
+            <ul className='d-flex justify-content-right'>
             {linkArray}
             </ul>
         </nav>
