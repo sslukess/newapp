@@ -3,6 +3,7 @@ import './App.css';
 import '../Utils/Color Pallet/ColorPallet.css'
 import Header from '../Components/Header/header';
 import ScreenSizeProvider from '../Utils/Screen Size Media Queries/ScreenSize';
+import Main from '../Containers/Main/Main'
 
 
 function App() {
@@ -13,8 +14,7 @@ function App() {
     <>
       <ScreenSizeProvider>
         <Header />
-        <main>
-        </main>
+        <Main></Main>
       </ScreenSizeProvider>
     </>
   )

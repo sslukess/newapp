@@ -1,7 +1,10 @@
 import React from "react";
+import './Main.css'
 
-function Main({ children }) {
+export default function Main({ children }) {
     return (
-        
+        <main id='main'>
+            {children}
+        </main>
     );
 }
