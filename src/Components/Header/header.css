@@ -2,19 +2,41 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: var(--background);
     height: 75px;
 }
 
 #nav-link-section {
-    width: 25%; 
+    height: 100%
+}
+
+.nav-fifty-wide {
+    width: 50%;
+}
+
+.nav-twentyfive-wide {
+    width: 25%;
 }
 
 #nav-ul {
     list-style-type: none;
+    margin-top: 1rem;
 }
 
-#logo-section {
+.nav-li, #nav-link-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-li {
+   color: var(--text-primary);
+
+}
+
+
+#logo-section-mobile,
+#logo-section-desktop {
     padding: 10px;
     margin-left: 10px;
 }
@@ -22,4 +44,5 @@
 #logo-image {
     height: 100%;
     width: auto;
+    border-radius: 50px;
 }
