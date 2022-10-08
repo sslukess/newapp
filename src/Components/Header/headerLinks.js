@@ -18,7 +18,7 @@ const headerLinks = {
 // create link component
 
 function HeaderLink(props) {
-    return <li><a href={props.url}>{props.name}</a></li>
+    return <li key={props.name}><a href={props.url} >{props.name}</a></li>
 }
 
 const linkArray = []; 

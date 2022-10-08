@@ -1,20 +1,23 @@
 
 import './App.css';
-import React from 'react';
 import Header from '../Components/Header/header';
+import ScreenSizeProvider from '../Utils/Screen Size Media Queries/ScreenSize';
 
 
-class App extends React.Component {
+function App() {
 
-  render() {
-    return (
-      <>
-      <Header />
-      <main>  
-      </main>
-      </>
-    )
-  };
-}
+  
+
+  return (
+    <>
+      <ScreenSizeProvider>
+        <Header />
+        <main>
+        </main>
+      </ScreenSizeProvider>
+    </>
+  )
+};
+
 
 export default App;
