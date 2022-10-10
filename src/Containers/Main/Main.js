@@ -3,7 +3,7 @@ import './Main.css'
 
 export default function Main({ children }) {
     return (
-        <main id='main'>
+        <main id='main' class='container-fluid'>
             {children}
         </main>
     );
