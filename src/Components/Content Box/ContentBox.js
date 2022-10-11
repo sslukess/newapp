@@ -3,11 +3,19 @@ import Container from 'react-bootstrap/Container';
 
 export default function ContentBox(props) {
 
-    return (
-    
-    <Container>
-        <div className={props.divClass}>{props.content}</div>
-    </Container>
+    const Heading = () => {
+        return props.heading ? <h1>{props.heading}</h1> : null;
+    }
 
-    );
-}
+    return (
+
+        <Container>
+            <Heading />
+            <div className={props.innerDivClass}>
+                {props.content}
+                {props.children}
+            </div>
+        </Container>
+
+    )
+};
