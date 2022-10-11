@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ScreenSize } from '../../Utils/Screen Size Media Queries/ScreenSize';
 import Container from "react-bootstrap/Container";
-import './LeftHeadingText.css';
+import './LeftHeadingText.scss';
 
 export default function LeftHeadingText(props) {
+
+    let localScreenSize = useContext(ScreenSize);
+    console.log(localScreenSize);
+    let localScreenSizeClass = localScreenSize.isTabletOrMobile ? 'mobile' : 'desktop';
+
     return (
-        <div id='outerContainer'>
-            <div id='heading-box'>
+        <div id='outerContainer' className={localScreenSizeClass}>
+            <div id='heading-box' className={localScreenSizeClass}>
                 <h3>{props.heading}</h3>
             </div>
-            <div id='para-box'>
+            <div id='para-box' className={localScreenSizeClass}>
                 <p>{props.text}</p>
             </div>
         </div>
