@@ -1,10 +1,12 @@
 import './App.css';
 import '../Utils/Color Pallet/ColorPallet.css';
 import Header from '../Components/Organisms/Header/header';
+import Footer from '../Components/Organisms/Footer/Footer'
 import ScreenSizeProvider from '../Utils/Screen Size Media Queries/ScreenSize';
-import ContentBox from '../Components/Molecules/Content Box/ContentBox';
-import { Container } from 'react-bootstrap';
-import Hero from '../Components/Organisms/Hero/Hero'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
+import HomepageBody from '../Pages/Home/HomePageBody'
 
 
 let pText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit ame";
@@ -15,12 +17,13 @@ function App() {
     <>
       <ScreenSizeProvider>
         <Header />
-        <main id='main'>
-          <Hero id='hero' text={pText} heading='GRVL//BNE' />
-          <Container>
-            <ContentBox content='Hello World' heading='heading1' />
-          </Container>
-        </main>
+
+          <main>
+            <HomepageBody pText={pText} />
+            <Footer />
+          </main>
+
+          
       </ScreenSizeProvider>
     </>
   );

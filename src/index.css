@@ -17,7 +17,12 @@ code {
 html, body, #root, main {
   height: 100%;
   width: 100%;
+
 };
+
+main {
+
+}
 
 #main {
   padding: 0;
