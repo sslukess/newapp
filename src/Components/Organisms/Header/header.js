@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import linkArray from './headerLinks';
-import { ScreenSize } from '../../Utils/Screen Size Media Queries/ScreenSize';
+import { ScreenSize } from '../../../Utils/Screen Size Media Queries/ScreenSize';
 
 import './header.css'
 

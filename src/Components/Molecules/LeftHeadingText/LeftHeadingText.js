@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
-import { ScreenSize } from '../../Utils/Screen Size Media Queries/ScreenSize';
-import Container from "react-bootstrap/Container";
+import { ScreenSize } from '../../../Utils/Screen Size Media Queries/ScreenSize';
 import './LeftHeadingText.scss';
 
 export default function LeftHeadingText(props) {

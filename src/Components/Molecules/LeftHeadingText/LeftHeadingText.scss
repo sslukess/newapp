@@ -13,8 +13,9 @@
         height: 480px;
         padding: 20px;
     }
+
     background-color: var( --background-light);
-    border-radius: 3px;
+    border-radius: 6px;
 }
 
 #heading-box {
@@ -22,7 +23,7 @@
     &.desktop{
         position: relative;
         left: -50px;
-        bottom: -10px;
+        bottom: 34px;
     }
 
     height: 8em;
@@ -43,6 +44,7 @@
     
     overflow: hidden;
     margin-top: 10px;
+    width: 60%;
 
     &.desktop{
         height: 90%;
@@ -50,6 +52,7 @@
 
     &.mobile {
         height: 70%;
+        width: 100%;
     }
 }
 

@@ -1,0 +1,12 @@
+
+#hero-container {
+    padding: 0;
+    display: flex;
+    padding: 130px;
+
+    &.mobile {
+        justify-content: center;
+        padding: 60px;
+    }
+
+}
