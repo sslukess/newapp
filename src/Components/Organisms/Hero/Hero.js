@@ -9,7 +9,6 @@ export default function Hero(props) {
 
 
     let localScreenSize = useContext(ScreenSize);
-    console.log(localScreenSize);
     let localScreenSizeClass = localScreenSize.isTabletOrMobile ? 'mobile' : 'desktop';
 
     return (

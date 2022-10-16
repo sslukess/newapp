@@ -1,33 +1,28 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { pageList } from '../../../Utils/Router/Routed Page';
+import { RoutedPage } from '../../../Utils/Router/RouterProvider';
 
-const headerLinks = {
-    home: {
-        name: "Home",
-        URL: "google.com"
-    },
-    about: {
-        name: "About",
-        URL: ""
-    },
-    github: {
-        name: "Github",
-        URL: ""
-    }
-}
 
 // create link component
 
 function HeaderLink(props) {
-    return <li key={props.name} className='nav-li'><a href={props.url} className='nav-link' >{props.name}</a></li>
+    const {page, setPage} = useContext(RoutedPage);
+    // console.log('setPage at event handler = ')
+    // console.log(setPage);
+    const updatePage = (event) => {
+        console.log(event.target.innerHTML);
+        setPage(event.target.innerHTML);
+    }
+
+    return <li key={props.name} className='nav-li'><button onClick={updatePage} className='nav-link' >{props.name}</button></li>
 }
 
 const linkArray = []; 
 
-console.log(Object.entries(headerLinks))
+for (const link of Object.entries(pageList)) {
 
-for (const link of Object.entries(headerLinks)) {
-    console.log(link[1].name);
     linkArray.push(<HeaderLink url={link[1].URL} name={link[1].name} />)
+
 }
 
 //console.log(linkArray)

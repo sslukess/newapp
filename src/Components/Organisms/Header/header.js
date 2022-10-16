@@ -11,7 +11,6 @@ const logoSrc = process.env.PUBLIC_URL + "images/logo.jpg";
 export default function Header() {
 
     let localScreenSize = useContext(ScreenSize);
-    console.log(localScreenSize);
 
     const navLinkSectionWidthClass = localScreenSize.isTabletOrMobile ? 'nav-fifty-wide' : 'nav-twentyfive-wide';
     

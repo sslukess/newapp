@@ -31,7 +31,8 @@
 
 .nav-li {
    color: var(--text-primary);
-
+   overflow: hidden;
+   white-space: nowrap;
 }
 
 

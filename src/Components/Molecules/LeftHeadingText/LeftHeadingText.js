@@ -5,7 +5,7 @@ import './LeftHeadingText.scss';
 export default function LeftHeadingText(props) {
 
     let localScreenSize = useContext(ScreenSize);
-    console.log(localScreenSize);
+
     let localScreenSizeClass = localScreenSize.isTabletOrMobile ? 'mobile' : 'desktop';
 
     return (

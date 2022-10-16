@@ -3,27 +3,32 @@ import '../Utils/Color Pallet/ColorPallet.css';
 import Header from '../Components/Organisms/Header/header';
 import Footer from '../Components/Organisms/Footer/Footer'
 import ScreenSizeProvider from '../Utils/Screen Size Media Queries/ScreenSize';
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-
+import RouterProvider from '../Utils/Router/RouterProvider'
+import PageRender from '../Utils/Router/Routed Page';
 import HomepageBody from '../Pages/Home/HomePageBody'
+import React, { useState } from 'react';
 
 
 let pText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit ame";
 
 function App() {
 
+  const [page, setPage] = useState();
+  let value = {page, setPage};
+  //console.log(`value at app = `);
+  //console.log(value);
+
   return (
     <>
       <ScreenSizeProvider>
-        <Header />
-
+        <RouterProvider value={value}>
+          <Header />
           <main>
-            <HomepageBody pText={pText} />
+            {/* <HomepageBody pText={pText} /> */}
+            <PageRender pText={pText} />
             <Footer />
           </main>
-
-          
+        </RouterProvider>
       </ScreenSizeProvider>
     </>
   );

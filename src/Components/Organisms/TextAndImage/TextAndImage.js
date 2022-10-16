@@ -8,8 +8,7 @@ import * as styles from './TextAndImage.module.css'
 
 
 export default function TextAndImage(props) {
-
-    console.log(styles)
+    
     return (
         <Container id={styles.default.outerContainer}>
             <Row className={styles.default.Row}>
