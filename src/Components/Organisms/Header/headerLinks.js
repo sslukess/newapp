@@ -14,7 +14,7 @@ function HeaderLink(props) {
         setPage(event.target.innerHTML);
     }
 
-    return <li key={props.name} className='nav-li'><button onClick={updatePage} className='nav-link' >{props.name}</button></li>
+    return <li key={props.name} className='nav-li'><button onClick={updatePage} className='btn btn-text' >{props.name}</button></li>
 }
 
 const linkArray = []; 

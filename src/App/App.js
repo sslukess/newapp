@@ -5,7 +5,6 @@ import Footer from '../Components/Organisms/Footer/Footer'
 import ScreenSizeProvider from '../Utils/Screen Size Media Queries/ScreenSize';
 import RouterProvider from '../Utils/Router/RouterProvider'
 import PageRender from '../Utils/Router/Routed Page';
-import HomepageBody from '../Pages/Home/HomePageBody'
 import React, { useState } from 'react';
 
 
@@ -24,7 +23,6 @@ function App() {
         <RouterProvider value={value}>
           <Header />
           <main>
-            {/* <HomepageBody pText={pText} /> */}
             <PageRender pText={pText} />
             <Footer />
           </main>

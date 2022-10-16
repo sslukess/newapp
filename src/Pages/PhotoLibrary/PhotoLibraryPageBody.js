@@ -1,8 +1,14 @@
 import React from "react";
+import LibraryPhotoPopped from '../../Components/Molecules/Library Picture/LibraryPicture'
 
-export default function PhotoLibraryPageBody() {
+
+const Image = 'https://miro.medium.com/max/1400/1*wDp4k4SiezqVkSkVCUkUFw.png';
+
+
+
+export default function PhotoLibraryPageBody(props) {
 
     return (
-        <div>Hello World</div>
+        <LibraryPhotoPopped src={Image} text='blahlbalhlah'/>
     )
 }

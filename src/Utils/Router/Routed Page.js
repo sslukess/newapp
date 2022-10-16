@@ -19,11 +19,6 @@ export const pageList = {
         name: "Photos",
         URL: "",
         Fn: PhotoLibraryPageBody
-    },
-    github: {
-        name: "Github",
-        URL: "https://www.google.com",
-        Fn: null
     }
 };
 
