@@ -13,7 +13,7 @@
 }
 
 .Col {
-    overflow: scroll;
+    overflow: hidden;
 }
 
 #imgContainer {

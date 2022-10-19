@@ -12,11 +12,44 @@
 }
 
 #libraryPicture {
-    z-index: 4;
+   
+    width: 100%;
+    height: auto;
+}
+
+#imgContainer {
     position: relative;
 }
 
+#imgContainer.clicked {
+    border: 2px solid var(--background);
+    border-radius: 2px;
+}
+
+
+
+#text {
+    color: #fff;
+}
+
+#textContainer {
+    background-color: var(--background);
+    padding: 0.8rem;
+    margin-top: 3px; 
+    border-radius: 4px;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+#libraryPictureComponentContainer {
+    width: 100%;
+    margin: 1rem;
+    position: relative;
+}
 
 .clicked {
     z-index: 4;
+
 }

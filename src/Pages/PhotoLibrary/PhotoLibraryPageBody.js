@@ -1,14 +1,37 @@
 import React from "react";
 import LibraryPhotoPopped from '../../Components/Molecules/Library Picture/LibraryPicture'
+import { Container, Row, Col } from 'react-bootstrap'
+import libPicDummy from '../../Images/libPicDummy.jpg'
 
 
-const Image = 'https://miro.medium.com/max/1400/1*wDp4k4SiezqVkSkVCUkUFw.png';
+const Image = libPicDummy;
 
 
 
 export default function PhotoLibraryPageBody(props) {
+    
+    let pictureText = 'A really nice picture showing somebody having fun in the wilderness';
 
     return (
-        <LibraryPhotoPopped src={Image} text='blahlbalhlah'/>
+        <Container>
+            <Row>
+                <Col><LibraryPhotoPopped src={Image} text={pictureText} /></Col>
+                <Col><LibraryPhotoPopped src={Image} text={pictureText} /></Col>
+                <Col><LibraryPhotoPopped src={Image} text={pictureText} /></Col>
+
+            </Row>
+            <Row>
+                <Col><LibraryPhotoPopped src={Image} text={pictureText} /></Col>
+                <Col><LibraryPhotoPopped src={Image} text={pictureText} /></Col>
+                <Col><LibraryPhotoPopped src={Image} text={pictureText} /></Col>
+
+            </Row>
+            <Row>
+                <Col><LibraryPhotoPopped src={Image} text={pictureText} /></Col>
+                <Col><LibraryPhotoPopped src={Image} text={pictureText} /></Col>
+                <Col><LibraryPhotoPopped src={Image} text={pictureText} /></Col>
+
+            </Row>
+        </Container>
     )
 }
