@@ -1,22 +1,24 @@
 import React from "react";
+import LibraryPicturePopped from '../../Molecules/Library Picture/LibraryPicture';
+import { useQuery, gql } from '@apollo/client';
+import { GET_PHOTOS } from '../../../graphQL/Queries/GET_PHOTOS_request';
 import { Container, Row, Col } from 'react-bootstrap'
-import libPicDummy from '../../Images/libPicDummy.jpg'
-import PhotoLibrary from '../../Components/Organisms/Photo Library/PhotoLibrary'
 
+export default function PhotoLibrary() {
 
+    const { loading, error, data } = useQuery(GET_PHOTOS);
 
-const Image = libPicDummy;
+    if (loading) { return <p>loading</p> };
+    if (error) { return <p>error</p> };
 
-// Getting the photos from Contentful 
-
-export default function PhotoLibraryPageBody(props) {
-    
-    let pictureText = 'A really nice picture showing somebody having fun in the wilderness';
-
-    return (
-        <PhotoLibrary />
-    )
-}
+    if (data) { console.log(data)
+        // return (
+        //     data.PhotoLibrary.photosCollection.items.map((photoObject) => {
+        //         return <Col sm={12} md><LibraryPicturePopped src={photoObject.photoImage.url} text={photoObject.photoDescription} /></Col>
+        //     })
+        // )
+    }
+};
 
 
 // <Container>
@@ -38,4 +40,4 @@ export default function PhotoLibraryPageBody(props) {
 //                 <Col sm={12} md><LibraryPhotoPopped src={Image} text={pictureText} /></Col>
 
 //             </Row>
-//         </Container>
+// </Container>

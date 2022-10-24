@@ -22,7 +22,7 @@
 }
 
 #imgContainer.clicked {
-    border: 2px solid var(--background);
+    border: 2px solid var(--text-secondary);
     border-radius: 2px;
 }
 
@@ -33,7 +33,7 @@
 }
 
 #textContainer {
-    background-color: var(--background);
+    background-color: var(--text-secondary);
     padding: 0.8rem;
     margin-top: 3px; 
     border-radius: 4px;
@@ -45,7 +45,7 @@
 
 #libraryPictureComponentContainer {
     width: 100%;
-    margin: 1rem;
+    margin: 1rem 0;
     position: relative;
 }
 

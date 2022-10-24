@@ -6,7 +6,8 @@ import ScreenSizeProvider from '../Utils/Screen Size Media Queries/ScreenSize';
 import RouterProvider from '../Utils/Router/RouterProvider'
 import PageRender from '../Utils/Router/Routed Page';
 import React, { useState } from 'react';
-
+import { ApolloProvider } from '@apollo/client';
+import { client } from '../Utils/Apollo/ApolloClient.mjs'
 
 let pText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit ame";
 
@@ -20,6 +21,7 @@ function App() {
   return (
     <>
       <ScreenSizeProvider>
+        <ApolloProvider client={client} >
         <RouterProvider value={value}>
           <Header />
           <main>
@@ -27,6 +29,7 @@ function App() {
             <Footer />
           </main>
         </RouterProvider>
+        </ApolloProvider>
       </ScreenSizeProvider>
     </>
   );
