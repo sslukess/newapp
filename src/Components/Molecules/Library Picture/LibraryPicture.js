@@ -36,9 +36,7 @@ export default function LibraryPicturePopped(props) {
 
     const handleClick = () => {
         console.log('clicked!')
-
         clicked ? setClicked(false) : setClicked(true);
-
     }
 
     return (

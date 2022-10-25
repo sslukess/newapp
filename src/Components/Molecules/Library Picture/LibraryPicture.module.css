@@ -13,12 +13,15 @@
 
 #libraryPicture {
    
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
 
 #imgContainer {
     position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #imgContainer.clicked {
@@ -45,6 +48,7 @@
 
 #libraryPictureComponentContainer {
     width: 100%;
+    height: 100%;
     margin: 1rem 0;
     position: relative;
 }

@@ -1,0 +1,9 @@
+/* TODO: Set row height to something static and make an actual grid layout on the page. */
+
+#row {
+    height: 80vh;
+}
+
+#col {
+    height: 100%;
+}
