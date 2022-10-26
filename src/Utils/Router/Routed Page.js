@@ -28,7 +28,6 @@ export default function PageRender(props) {
     let { page } = useContext(RoutedPage);
  
     let PageToRender = pageList[page]?.Fn ? pageList[page].Fn : HomepageBody;
-    console.log(PageToRender);
 
     return <PageToRender {...props} />;
 }
