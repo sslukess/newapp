@@ -4,15 +4,8 @@ import libPicDummy from '../../Images/libPicDummy.jpg'
 import PhotoLibrary from '../../Components/Organisms/Photo Library/PhotoLibrary'
 
 
-
-const Image = libPicDummy;
-
-// Getting the photos from Contentful 
-
 export default function PhotoLibraryPageBody(props) {
     
-    let pictureText = 'A really nice picture showing somebody having fun in the wilderness';
-
     return (
         <PhotoLibrary />
     )

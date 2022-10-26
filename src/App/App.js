@@ -26,8 +26,8 @@ function App() {
           <Header />
           <main>
             <PageRender pText={pText} />
-            <Footer />
           </main>
+          <Footer />
         </RouterProvider>
         </ApolloProvider>
       </ScreenSizeProvider>
