@@ -25,7 +25,7 @@ export default function PhotoLibrary() {
             let groupedPhotoArray = [];
 
             for (let j = 0; j < Math.min(photosPerRow, mappedData.length); j++) {
-                let photoColElement = <Col id={styles.col} sm={12} md><LibraryPicturePopped src={mappedData[j].url} text={mappedData[j].photoDescription} /></Col>
+                let photoColElement = <Col id={styles.col} sm={12} md={4}><LibraryPicturePopped src={mappedData[j].url} text={mappedData[j].photoDescription} /></Col>
 
                 groupedPhotoArray.push(photoColElement);
             }
