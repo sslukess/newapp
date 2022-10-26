@@ -14,25 +14,3 @@ export default function PhotoLibraryPageBody(props) {
         </>
     )
 }
-
-
-// <Container>
-//             <Row>
-//                 <Col sm={12} md><LibraryPhotoPopped src={Image} text={pictureText} /></Col>
-//                 <Col sm={12} md><LibraryPhotoPopped src={Image} text={pictureText} /></Col>
-//                 <Col sm={12} md><LibraryPhotoPopped src={Image} text={pictureText} /></Col>
-
-//             </Row>
-//             <Row>
-//                 <Col sm={12} md><LibraryPhotoPopped src={Image} text={pictureText} /></Col>
-//                 <Col sm={12} md><LibraryPhotoPopped src={Image} text={pictureText} /></Col>
-//                 <Col sm={12} md><LibraryPhotoPopped src={Image} text={pictureText} /></Col>
-
-//             </Row>
-//             <Row>
-//                 <Col sm={12} md><LibraryPhotoPopped src={Image} text={pictureText} /></Col>
-//                 <Col sm={12} md><LibraryPhotoPopped src={Image} text={pictureText} /></Col>
-//                 <Col sm={12} md><LibraryPhotoPopped src={Image} text={pictureText} /></Col>
-
-//             </Row>
-//         </Container>
