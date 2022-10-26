@@ -1,0 +1,76 @@
+#overlay {
+    position: fixed; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 2; 
+    cursor: pointer; 
+}
+
+#libraryPicture {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+
+    &.desktop {
+        height: 100%;
+    }
+    
+    &.mobile {
+        height: auto;
+    }
+
+   
+}
+
+#imgContainer {
+
+    position: relative;
+
+    &.desktop {
+        height: 500px;
+    }
+    
+    &.mobile {
+       color: blue;
+    }
+
+    
+}
+
+
+#imgContainer.clicked {
+    border: 2px solid var(--text-secondary);
+    border-radius: 2px;
+}
+
+#text {
+    color: #fff;
+}
+
+#textContainer {
+    background-color: var(--text-secondary);
+    padding: 0.8rem;
+    margin-top: 3px; 
+    border-radius: 4px;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+#libraryPictureComponentContainer {
+    height: 100%;
+    position: relative;
+    padding: 0.5rem;
+}
+
+.clicked {
+    z-index: 4;
+
+}

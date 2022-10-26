@@ -1,0 +1,22 @@
+.Row, .Col, #imgContainer {
+    height: 100%;
+
+}
+
+.img {
+    height: auto;
+    width: 100%;
+}
+
+#outerContainer {
+    padding: 30px;
+}
+
+.Col {
+    overflow: hidden;
+}
+
+#imgContainer {
+    /* height: 770px; */
+
+}
