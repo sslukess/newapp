@@ -12,12 +12,20 @@ export default function Header() {
 
     let localScreenSize = useContext(ScreenSize);
 
-    const navLinkSectionWidthClass = localScreenSize.isTabletOrMobile ? 'nav-fifty-wide' : 'nav-twentyfive-wide';
-    
+    let navLinkSectionWidthClass;
+
+    if (localScreenSize.isMobile) {
+        navLinkSectionWidthClass = 'nav-seventy-wide'
+    } else if (localScreenSize.isTabletOrMobile) {
+        navLinkSectionWidthClass = 'nav-fifty-wide'
+    } else {
+        navLinkSectionWidthClass = 'nav-twentyfive-wide'
+    };
+
     const mobileLogo = <div id='logo-section-mobile' className={navLinkSectionWidthClass}><img id='logo-image' src={logoSrc} /></div>;
     const desktopLogo = <div id='logo-section-desktop' className={navLinkSectionWidthClass}><img id='logo-image' src={logoSrc} /></div>;
 
-    
+
 
     return (
         <nav id='nav-bar'>
