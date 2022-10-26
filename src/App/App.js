@@ -25,7 +25,7 @@ function App() {
         <RouterProvider value={value}>
           <Header />
           <main>
-            <PageRender pText={pText} />
+            <PageRender pText={pText.repeat(10)} />
           </main>
           <Footer />
         </RouterProvider>
