@@ -5,6 +5,7 @@ import { RoutedPage } from './RouterProvider';
 
 import HomepageBody from '../../Pages/Home/HomePageBody';
 import PhotoLibraryPageBody from '../../Pages/PhotoLibrary/PhotoLibraryPageBody';
+import ContactFormPageBody from '../../Pages/Contact Form/ContactFormPageBody';
 
 
 export const pageList = {
@@ -19,6 +20,11 @@ export const pageList = {
         name: "Photos",
         URL: "",
         Fn: PhotoLibraryPageBody
+    },
+    Contact: {
+        name: "Contact",
+        URL: "",
+        Fn: ContactFormPageBody
     }
 };
 
